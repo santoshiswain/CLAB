@@ -29,7 +29,7 @@ int main() {
 
         if (r < biasedProbability) {
             biasedHeads++;
-        }
+        
     }
     double fairProbability = (double)fairHeads / n;
     double biasedExperimentalProbability =
