@@ -36,12 +36,9 @@ int main() {
 
     printf("Enter number of arrays: ");
     scanf("%d", &k);
-
     printf("Enter number of elements in each array: ");
     scanf("%d", &n);
-
     int arr[k][n];
-
     printf("Enter sorted arrays:\n");
 
     for (int i = 0; i < k; i++) {

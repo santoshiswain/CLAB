@@ -109,12 +109,8 @@ void mergeSort3(int arr[], int low, int high)
     mergeSort3(arr,low,mid1);
     mergeSort3(arr,mid1+1,mid2);
     mergeSort3(arr,mid2+1,high);
-
     merge3(arr,low,mid1,mid2,high);
 }
-
-/* ---------- Utility ---------- */
-
 void generate(int arr[], int n)
 {
     for(int i=0;i<n;i++)

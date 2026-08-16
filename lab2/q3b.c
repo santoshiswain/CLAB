@@ -33,25 +33,20 @@ int main()
 
     // Input arrays
     printf("Enter %d sorted arrays:\n", k);
-
     for (int i = 0; i < k; i++)
     {
         printf("Array %d: ", i + 1);
-
         for (int j = 0; j < n; j++)
         {
             scanf("%d", &arr[i][j]);
         }
     }
-
     int current = k;
     int currentSize = n;
-
     // Repeat until only one array remains
     while (current > 1)
     {
         int newCount = 0;
-
         for (int i = 0; i < current; i += 2)
         {
             if (i + 1 < current)
@@ -77,13 +72,10 @@ int main()
         current = newCount;
         currentSize *= 2;
     }
-
     printf("\nFinal merged array:\n");
-
     for (int i = 0; i < k * n; i++)
     {
         printf("%d ", arr[0][i]);
     }
-
     return 0;
 }
