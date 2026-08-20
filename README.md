@@ -8,8 +8,10 @@ C-LAB
 
 1.Complexity Analysis
 
-Algorithm	         Time Complexity	       Space Complexity
+Algorithm        Time Complexity	       Space Complexity
+
 Binary Search     	O(log₂ n)	             O(1)
+
 Ternary Search	       O(log₃ n)	         O(1)
 
 
