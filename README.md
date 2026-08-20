@@ -16,10 +16,16 @@ Ternary Search	                              O(log₃ n)	         O(1)
 
 
 Binary Search
+
 Splits the search space into two equal halves.
 Requires only one midpoint comparison per iteration.
 Lower constant factor, making it faster in practice.
+
+
+
 Ternary Search
+
+
 Splits the search space into three parts.
 Requires two midpoint comparisons in each iteration.
 Although it has fewer levels of recursion/iterations, the additional comparison overhead generally makes it slower than binary search for sorted arrays.
