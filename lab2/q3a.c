@@ -4,7 +4,7 @@
 void merge(int a[], int b[], int result[], int n1, int n2) {
     int i = 0, j = 0, k = 0;
 
-    // Merge two sorted arrays
+  
     while (i < n1 && j < n2) {
         if (a[i] <= b[j]) {
             result[k] = a[i];

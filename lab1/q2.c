@@ -24,13 +24,13 @@ int main() {
             fairHeads++;
         }
 
-        
+     
         double r = (double)rand() / RAND_MAX;
 
         if (r < biasedProbability) {
             biasedHeads++;
         
-    }
+    }}
     double fairProbability = (double)fairHeads / n;
     double biasedExperimentalProbability =
         (double)biasedHeads / n;

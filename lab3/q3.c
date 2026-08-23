@@ -9,14 +9,13 @@ struct Result findMinMax(int arr[], int low, int high) {
 
     struct Result result, left, right;
 
-    // Only one element
     if (low == high) {
         result.min = arr[low];
         result.max = arr[low];
         return result;
     }
 
-    // Two elements
+   
     if (high == low + 1) {
 
         if (arr[low] < arr[high]) {
@@ -30,14 +29,11 @@ struct Result findMinMax(int arr[], int low, int high) {
         return result;
     }
 
-    // Divide
     int mid = low + (high - low) / 2;
 
-    // Conquer
     left = findMinMax(arr, low, mid);
     right = findMinMax(arr, mid + 1, high);
 
-    // Combine
     if (left.min < right.min)
         result.min = left.min;
     else

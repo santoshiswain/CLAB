@@ -1,8 +1,4 @@
 #include<stdio.h>
-
-
-
-
 void binarySearch(int arr[],int n,int key){
     int s=0;
     int e=n-1;
@@ -26,8 +22,7 @@ void ternarysearch(int arr[],int n,int key){
     int s=0;
     int l=n-1;
     int i;
-
-    while(s<=l){
+while(s<=l){
         int mid1=s+(s+l)/3;
         int mid2=l-(s+l)/3;
        if(arr[mid1]==key){

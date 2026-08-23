@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-/* ---------- Standard Merge Sort ---------- */
+
 
 void merge(int arr[], int l, int m, int r)
 {
@@ -48,7 +48,7 @@ void mergeSort(int arr[], int l, int r)
     }
 }
 
-/* ---------- Three-Way Merge ---------- */
+
 
 void merge3(int arr[], int low, int mid1, int mid2, int high)
 {
